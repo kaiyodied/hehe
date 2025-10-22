@@ -1,30 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elementrix Tech Solutions</title>
-  <link rel="stylesheet" href="assets/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>kaikai + kaykay ❤️ future plans</title>
+<style>
+  /* General Styles */
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #000;
+    color: #00f0ff;
+    overflow-x: hidden;
+    cursor: pointer;
+  }
+
+  h1, h2, h3 {
+    margin: 0.5em 0;
+  }
+
+  h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #00f0ff;
+    text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+    animation: glow 2s ease-in-out infinite alternate;
+    margin-top: 40px;
+  }
+
+  h2 {
+    font-size: 2em;
+    color: #00aaff;
+    margin-bottom: 0.5em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    color: #66ccff;
+  }
+
+  section {
+    padding: 80px 20px;
+    min-height: 100vh;
+    transition: all 1s ease;
+  }
+
+  .section-container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(0, 0, 50, 0.3);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px #00f0ff;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  .section-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px #00ffff;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  li:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00f0ff;
+    transform: translateX(10px);
+  }
+
+  /* Glowing animation */
+  @keyframes glow {
+    from { text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff; }
+    to { text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff; }
+  }
+
+  /* Background Effects */
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .particle, .heart-particle {
+    position: absolute;
+    border-radius: 50%;
+    animation: floatUp linear infinite;
+  }
+
+  .particle {
+    background: rgba(0,255,255,0.7);
+  }
+
+  .heart-particle {
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    pointer-events: none;
+    font-size: 20px;
+    animation: heartFloat 3s ease-out forwards;
+  }
+
+  @keyframes floatUp {
+    0% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+  }
+
+  @keyframes heartFloat {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-200px) scale(1.5); opacity: 0; }
+  }
+
+  /* Smooth Scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Section Titles */
+  .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #00f0ff;
+  }
+
+  /* Heart Icon */
+  .heart {
+    color: #ff4d6d;
+    animation: heartbeat 1s infinite;
+  }
+
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+  }
+</style>
 </head>
 <body>
-  <header>
-    <div class="logo"><img src="assets/logo.png" alt="Elementrix Logo"> Elementrix Tech Solutions</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Building Futuristic Websites</h1>
-    <p>We design sleek, modern, and effective websites for individuals and small businesses.</p>
-    <a href="contact.html" class="btn">Get Started</a>
-  </section>
+<audio id="heartSound" src="https://freesound.org/data/previews/522/522632_10737140-lq.mp3"></audio>
 
-  <footer>
-    <p>© 2025 Elementrix Tech Solutions</p>
-  </footer>
+<div class="background" id="background"></div>
+
+<h1>kaikai + kaykay <span class="heart">❤️</span></h1>
+
+<!-- Names Section -->
+<section id="names">
+  <div class="section-container">
+    <h2 class="section-title">names</h2>
+    <ul>
+      <li>hai le - (prince) kaikai lei</li>
+      <li>katie li - (princess) kaykay lei</li>
+      <li>last name - lei</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Future Children Section -->
+<section id="children">
+  <div class="section-container">
+    <h2 class="section-title">names for future children 🧑‍🧑‍🧒</h2>
+
+    <h3>boy</h3>
+    <ul>
+      <li><strong>kyros</strong></li>
+      <li>kenzo</li>
+      <li>karlson</li>
+    </ul>
+
+    <h3>girl</h3>
+    <ul>
+      <li><strong>hayley</strong></li>
+      <li>hannah</li>
+      <li>haven</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Pets Section -->
+<section id="pets">
+  <div class="section-container">
+    <h2 class="section-title">pets</h2>
+    <ul>
+      <li>german shepherd [dog] (kronos | karolina)</li>
+      <li>munchkin [cat] (hashira | halo)</li>
+      <li>ragdoll [cat] (harold | helena)</li>
+      <li>american wirehair [cat] (hunter | harper)</li>
+    </ul>
+  </div>
+</section>
+
+<script>
+  const background = document.getElementById('background');
+  const heartSound = document.getElementById('heartSound');
+
+  // Floating Particles
+  function createParticle() {
+    const particle = document.createElement('div');
+    particle.classList.add('particle');
+    const size = Math.random() * 10 + 5;
+    particle.style.width = `${size}px`;
+    particle.style.height = `${size}px`;
+    particle.style.left = Math.random() * 100 + 'vw';
+    particle.style.animationDuration = (Math.random() * 10 + 5) + 's';
+    particle.style.background = `rgba(${Math.floor(Math.random()*50)},255,255,${Math.random()})`;
+    background.appendChild(particle);
+    setTimeout(() => particle.remove(), 15000);
+  }
+  setInterval(createParticle, 300);
+
+  // Click to spawn hearts
+  document.body.addEventListener('click', (e) => {
+    const heart = document.createElement('div');
+    heart.classList.add('heart-particle');
+    heart.style.left = `${e.clientX}px`;
+    heart.style.top = `${e.clientY}px`;
+    heart.innerText = '❤️';
+    background.appendChild(heart);
+    heartSound.currentTime = 0;
+    heartSound.play();
+    setTimeout(() => heart.remove(), 3000);
+  });
+</script>
+
 </body>
 </html>
